@@ -1,8 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .small-square {
-    background-color: lightgrey;
+    position: relative;
     border: 1px solid black;
     padding-bottom: calc((100% / 3) - 2px);
-    position: relative;
 }
 
 .big-square {
@@ -17,4 +20,16 @@
 }
 .container:last-child .row {
     border-bottom: 3px solid black;
+}
+
+.show {
+    background-color: lightgray;
+}
+
+.small-square span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 40px;
 }
