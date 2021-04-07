@@ -1,0 +1,20 @@
+.small-square {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding-bottom: calc((100% / 3) - 2px);
+    position: relative;
+}
+
+.big-square {
+    border: 2px solid black;
+}
+.row {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.container:first-child .row {
+    border-top: 3px solid black;
+}
+.container:last-child .row {
+    border-bottom: 3px solid black;
+}
