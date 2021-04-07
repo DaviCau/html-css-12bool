@@ -1,7 +1,62 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
 }
 
+.title {
+    line-height: 70px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: goldenrod;
+    text-shadow: 1px 1px 10px black;
+}
+
+.solution {
+    text-align: center;
+    font-size: 15px;
+    color: darkblue;
+}
+.hint{
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 10px;
+    color: darkblue;
+}
+
+.small-square span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 25px;
+}
+
+.show {
+    background-color: lightgray;
+}
+.hide {
+    background-color: white;
+}
+
+.hide span {
+    opacity: 0;
+}
+.hide span:hover {
+    cursor: default;
+}
+.hide:active span {
+    opacity: 1;
+    transition: opacity linear 1s;
+}
+
+/* bordi */
 .small-square {
     position: relative;
     border: 1px solid black;
@@ -14,22 +69,11 @@ body {
 .row {
     border-left: 3px solid black;
     border-right: 3px solid black;
+    box-shadow: 1px 1px 10px black;
 }
-.container:first-child .row {
+.container:nth-child(2) .row {
     border-top: 3px solid black;
 }
-.container:last-child .row {
+.container:nth-child(4) .row {
     border-bottom: 3px solid black;
-}
-
-.show {
-    background-color: lightgray;
-}
-
-.small-square span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    font-size: 40px;
 }
